@@ -1,4 +1,9 @@
 .posts {
   display: flex;
-  column-gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div {
+  width: 48%;
 }
