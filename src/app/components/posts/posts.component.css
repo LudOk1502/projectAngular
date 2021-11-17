@@ -1,9 +1,11 @@
+div {
+  width: 48%;
+}
+
 .posts {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-div {
-  width: 48%;
-}
+
