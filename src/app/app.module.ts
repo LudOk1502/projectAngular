@@ -13,21 +13,20 @@ import {UserDetailsComponent} from './components/user-details/user-details.compo
 import {PostDetailsComponent} from './components/post-details/post-details.component';
 import {HomeComponent} from './components/home/home.component';
 import {TestGuard} from "./guards/test.guard";
-import { FormsComponent } from './components/forms/forms.component';
+import {FormsComponent} from './components/forms/forms.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Route[] = [
+  {path: '', redirectTo: 'users', pathMatch: 'full'},
   {
     path: '',
     component: HomeComponent,
     children: [
       {
         path: 'users',
-        component: UsersComponent,
-        canActivate: [TestGuard],
-        canDeactivate: [TestGuard],
-        children: [{path: ':id', component: UserDetailsComponent}]
+        component: UsersComponent
       },
+      {path: 'users/:id', component: UserDetailsComponent},
       {
         path: 'posts',
         component: PostsComponent,

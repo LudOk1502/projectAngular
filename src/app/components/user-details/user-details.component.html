@@ -17,3 +17,6 @@
   catchPhrase: {{user?.company?.catchPhrase}}<br>
   bs: {{user?.company?.bs}}
 </p>
+
+<h2>Posts</h2>
+<app-post *ngFor="let p of posts" [post]="p"></app-post>

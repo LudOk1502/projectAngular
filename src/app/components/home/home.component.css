@@ -1,9 +1,8 @@
-header {
-  align-items: center;
-  background-color: coral;
-  column-gap: 150px;
-  display: flex;
-  font-size: 30px;
-  height: 100px;
-  justify-content: center;
+a {
+  color: crimson;
+}
+
+div {
+  font-size: 20px;
+  margin-bottom: 20px;
 }

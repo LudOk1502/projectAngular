@@ -19,7 +19,4 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navTo() {
-    this.router.navigate([this.post.id], {relativeTo: this.activatedRoute, state: this.post});
-  }
 }
