@@ -7,8 +7,8 @@
 <hr>
 
 <form [formGroup]="myForm">
-  <input type="text" formControlName="name">
-  <input type="text" formControlName="age">
+  <div><input type="text" formControlName="name"></div>
+  <div><input type="number" formControlName="age" (input)="setAge()"></div>
   <span
     *ngIf="myForm.controls['name'].errors?.['minlength']">{{myForm.controls['name'].errors?.['minlength']|json}}</span>
   <button (click)="save2()" [disabled]="myForm.invalid">Save</button>
